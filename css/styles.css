@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+a, button{
+    transition: all .3s ease-in-out;
+}
+
+html{
+    color: f6f6f6;
+    font-family: "Lato", sans-serif;
+    font-size: 10px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main--text{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.4rem;
+    font-weight: 700;
+    text-align: center;
+    max-width: 570px;
+    margin: 50px auto 40px;
+}
+.main--text::after{
+    content: "";
+    display: block;
+    margin: 20px auto;
+    width: 50px;
+    border-bottom: 4px solid #dddbdb;
+    border-radius: 5px;
+}
+
+.parafrah{
+    max-width: 570px;
+    margin: 0 auto 60px;
+}
+.parafrah--text{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.flex--people{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flip {
+    width: 267px;
+    margin: 15px;
+}
+.flip__body {
+    position: relative;
+	width: 267px;
+    height: 267px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+.flip__front,
+.flip__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.flip__front {
+	transform: rotateY(0deg);
+	backface-visibility: hidden;
+}
+.flip__back {
+	transform: rotateY(-180deg);
+    background-color: #18b5dc;
+}
+
+.flip__body:hover {
+	transform: rotateY(-180deg);
+}
+.flip__link{
+    text-decoration: none;
+    color: #5ecbe7;
+    font-size: 50px;
+}
+.flip__link:hover{
+    background-color: #18b5dc;
+    color: #fff;
+}
+.flip__container{
+    max-width: 140px;
+}
+.flip__name{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 20px 0 5px 0;
+    display: flex;
+}
+.flip__post{
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    margin: 5px 0 5px 0;
+}
+.flip__name a, .flip__post a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    position: relative;
+
+}
+.flip__name a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transition: 0.3s;
+    transform-origin: left center;
+  }
+
+.flip__name a:hover:after {
+    transform: scaleX(1);
+    transform-origin: right center;
+  } 
+  .flip__post a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    position: relative;
+
+}
+.flip__post a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transition: 0.3s;
+    transform-origin: left center;
+  }
+
+.flip__post a:hover:after {
+    transform: scaleX(1);
+    transform-origin: right center;
+  } 
