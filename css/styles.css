@@ -67,7 +67,8 @@ html{
 	left: 0;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+    align-items: center;
+    overflow: hidden;
 }
 .flip__front {
 	transform: rotateY(0deg);
